@@ -2,7 +2,7 @@ import { createFanPages } from '../../js/scripts.js'
 
 const classInfo = [];
 
-classInfo.push({ name: "Brandon Cheuk",     fanPageUrl: "https://en.wikipedia.org/wiki/Purple" });
+classInfo.push({ name: "Brandon Cheuk",     fanPageUrl: "https://brandgc.github.io/fan-page/" });
 classInfo.push({ name: "Charlie McNeece",   fanPageUrl: "https://itsboblemon.github.io/nlr-7-fan-page/" });
 classInfo.push({ name: "Guangyuan Sun",     fanPageUrl: "https://gysungrad.github.io/fan-page/" });
 classInfo.push({ name: "Justin Wong",       fanPageUrl: "https://jwong209.github.io/shredders-revenge-fanpage/" });
