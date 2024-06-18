@@ -1,4 +1,4 @@
-const API_BASE = 'https://beneficial-devi-te-instructor-89e55203.koyeb.app';
+const API_BASE = 'https://opposite-aubree-te-instructor-9a3d6640.koyeb.app';
 
 /**
  * Only attach listeners to elements after DOM
