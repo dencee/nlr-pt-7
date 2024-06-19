@@ -1,17 +1,18 @@
 * {
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family:'Helvetica', 'Arial', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 16px;
 }
 
-span {
-  color: purple;
-}
-
 body {
 margin: 10px;
+background-color: white; /* Light gray background */
+color: #333; /* Dark gray text */
 }
 
 header {
@@ -46,30 +47,68 @@ header {
 
  #student-list ul{
   list-style: none;
-  padding-left: 0;
-
-  
+  padding-left: 0;  
  }
 
-/* #main-grid {
-  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-areas: 
-  "fan-page-cards fan-page-cards fan-page-cards";
-} */
-
+ #body-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #433250;
+  color: white;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+ }
+ 
 .fan-page-cards {
   display: flex;
   flex-wrap: wrap;  
-  grid-area: fan-page-cards;
+  gap: 20px;
 }
+
 .card {
   width: 400px;
-  margin: 20px;
+  margin: 20px; 
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  
+}
+
+.card-header {
+  background-color:#433250; /* Deep purple */
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 200;
+  border-top-left-radius: 10px; /* top rounded edges*/
+  border-top-right-radius: 10px;
+  text-transform: uppercase;
+}
+
+.card-body {
+  padding: 10px;
 }
 
 .btn {
-  width: 50%;
-  margin: auto;
-  margin-bottom: 10px;
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #433250; /* Deep purple */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded edges */
+  cursor: pointer;
+  align-self: center;
+}
+
+.btn:hover {
+  background-color: #271d2e;
 }
