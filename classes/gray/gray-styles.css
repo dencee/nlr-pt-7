@@ -12,3 +12,82 @@ span {
   margin: auto;
   margin-bottom: 10px;
 }
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  display: flex;
+}
+
+#banner{
+  position: absolute;
+  z-index: -1;
+}
+
+#profile{
+  
+  border-radius: 50%;
+}
+
+main{
+  display: flex;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2{
+  margin-top: 30px;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10px;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.left-aside {
+  margin-left: 80px;
+  margin-top: 480px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.aside-left-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-aside {
+  margin-left: 150px;
+  margin-top: 380px;
+  margin-right: 80px;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 35%
+}
+
+.icons{
+  flex-direction: row;
+  align-content: center;
+}
+
+.icons>a{
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 15px;
+}
