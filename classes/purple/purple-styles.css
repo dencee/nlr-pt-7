@@ -1,7 +1,58 @@
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+html {
+  font-size: 16px;
+}
+
 span {
   color: purple;
 }
 
+body {
+
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-areas: 
+  "purple-gradient purple-gradient purple-gradient"
+  "class-bio class-bio student-list"
+  ;
+
+}
+ #purple-gradient {
+  grid-area: purple-gradient;
+  height: 20vw;
+ }
+
+ #class-bio {
+  grid-area: class-bio;
+  display: flex;
+  flex-direction: column;
+ }
+
+ #student-list {
+  grid-area: student-list;
+  display: flex;
+  flex-direction: column;
+ }
+
+ #student-list ul{
+  list-style: none;
+  
+ }
+
+#main-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-areas: 
+  "fan-site card fan-site card fan-site card"
+  ;
+
+}
 .card {
   width: 400px;
   margin: 20px;
