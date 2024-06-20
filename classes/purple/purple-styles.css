@@ -18,31 +18,42 @@ color: #333; /* Dark gray text */
 header {
   padding: 10px;
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   border-bottom: 1px solid;
   grid-template-areas: 
-  "purple-gradient purple-gradient purple-gradient"
-  "class-bio class-bio student-list"
-  ;
+    "gradient gradient gradient"
+    "pic . ."
+    "pic . student-list"
+    "class-bio class-bio student-list";
 
 }
  #purple-gradient {
-  grid-area: purple-gradient;
+  grid-area: gradient;
   height: 20vw;
+  background: linear-gradient(rgba(151, 99, 189, 100), rgba(194, 168, 213, 50));
  }
 
  #class-bio {
   grid-area: class-bio;
   display: flex;
   flex-direction: column;
+  margin: 2em;
  }
 
  #student-list {
   grid-area: student-list;
   display: flex;
   flex-direction: column;
-  
+ }
+
+ #class-logo {
+  grid-area: pic;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-left: 2em;
  }
 
  #student-list ul{
