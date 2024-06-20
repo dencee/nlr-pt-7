@@ -2,6 +2,14 @@ span {
   color: gray;
 }
 
+.fan-page-cards{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+ 
+}
+
 .card {
   width: 400px;
   margin: 20px;
