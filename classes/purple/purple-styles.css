@@ -10,23 +10,24 @@ html {
 }
 
 body {
-margin: 10px;
+/* margin: 10px; */ /* tried removing the margin so that the gradient banner would fill the entire top of page, it may be necessary to add some margins to child elements */
 background-color: white; /* Light gray background */
 color: #333; /* Dark gray text */
 }
 
-header {
-  padding: 10px;
+#header-content {
+  margin: 2em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 10px;
   border-bottom: 1px solid;
   grid-template-areas: 
-    "gradient gradient gradient"
+    /* "gradient gradient gradient" */
     "pic . ."
     "pic . student-list"
     "class-bio class-bio student-list";
-
+  position: relative;
+  top: -10vw;
 }
  #purple-gradient {
   grid-area: gradient;
@@ -38,13 +39,14 @@ header {
   grid-area: class-bio;
   display: flex;
   flex-direction: column;
-  margin: 2em;
+  margin: 2em 2em 2em 0;
  }
 
  #student-list {
   grid-area: student-list;
   display: flex;
   flex-direction: column;
+  justify-content: center;
  }
 
  #class-logo {
@@ -53,7 +55,6 @@ header {
   width: 200px;
   border-radius: 100px;
   object-fit: cover;
-  margin-left: 2em;
  }
 
  #student-list ul{
