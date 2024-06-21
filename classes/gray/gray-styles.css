@@ -1,5 +1,5 @@
-span {
-  color: gray;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
@@ -12,3 +12,54 @@ span {
   margin: auto;
   margin-bottom: 10px;
 }
+
+header {
+  position: static;
+  width: 100%;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#information {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: grid;
+  grid-template-columns: 75% 15%;
+  grid-template-areas: 
+    "bio student-list";
+  column-gap: 10%;
+  
+}
+#bio {
+  grid-area: bio;
+}
+
+#student-list {
+  grid-area: student-list;
+  word-wrap: none;
+  
+}
+#students {
+  list-style: none;
+  padding: 0;
+
+}
+#cards {
+}
+
+.fan-page-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer {
+}
+
