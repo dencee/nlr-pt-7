@@ -15,13 +15,17 @@ background-color: white; /* Light gray background */
 color: #333; /* Dark gray text */
 }
 
+header {
+    height: min-content;
+}
+
 #header-content {
   margin: 2em;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 10px;
   border-bottom: 1px solid;
-  grid-template-areas: 
+  grid-template-areas:
     /* "gradient gradient gradient" */
     "pic . ."
     "pic . student-list"
@@ -59,7 +63,7 @@ color: #333; /* Dark gray text */
 
  #student-list ul{
   list-style: none;
-  padding-left: 0;  
+  padding-left: 0;
  }
 
  #body-header {
@@ -76,22 +80,26 @@ color: #333; /* Dark gray text */
   text-transform: uppercase;
   letter-spacing: 3px;
  }
- 
+
 .fan-page-cards {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .card {
   width: 400px;
-  margin: 20px; 
+  margin: 20px;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   text-align: center;
-  
+
+}
+
+.card:hover {
+    background-color: rgb(226, 199, 226);
 }
 
 .card-header {
@@ -123,4 +131,45 @@ color: #333; /* Dark gray text */
 
 .btn:hover {
   background-color: #271d2e;
+}
+
+@media only screen and (max-width: 890px) {
+
+    .fan-page-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .card iframe {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #header-content {
+        top: -20vw;
+        grid-template-columns: 1fr;
+        grid-template-areas: "pic"
+                            "student-list"
+                            "class-bio";
+        font-size: smaller;
+    }
+    #class-logo {
+        height: 40vw;
+        width: 40vw;
+        margin-left: 20vw;
+    }
+    #student-list ul {
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
 }
