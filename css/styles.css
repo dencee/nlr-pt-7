@@ -26,28 +26,59 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 72px;
-  margin-bottom: 5%;
+  font-size: 80px;
+}
+
+nav {
+  width: 700px;
 }
 
 ul{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0;
 }
 
 li {
   list-style-type: none;
-  
+  margin: 5%;
 }
 
 a {
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+input {
+  font-family: 'Courier New', Courier, monospace;
+  color:darkgray;
+}
+
+form>div{
+  margin-bottom: 10px;
+}
+
+footer{
+  position:absolute;
+  bottom: 10px;
 }
