@@ -98,9 +98,9 @@ header {
 
 }
 
-.card:hover {
+/* .card:hover {
     background-color: rgb(226, 199, 226);
-}
+} */
 
 .card-header {
   background-color:#433250; /* Deep purple */
