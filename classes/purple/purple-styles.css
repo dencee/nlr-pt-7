@@ -71,7 +71,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #433250;
+  background-color: rgba(151, 99, 189, 100);
   color: white;
   height: 60px;
   border: 1px solid #ccc;
@@ -103,7 +103,7 @@ header {
 } */
 
 .card-header {
-  background-color:#433250; /* Deep purple */
+  background-color:rgba(151, 99, 189, 100); 
   color: white;
   padding: 10px;
   font-size: 16px;
@@ -121,7 +121,7 @@ header {
   width: 30%;
   margin: 10px auto;
   padding: 10px;
-  background-color: #433250; /* Deep purple */
+  background-color: rgba(151, 99, 189, 100); 
   color: white;
   border: none;
   border-radius: 5px; /* Rounded edges */
