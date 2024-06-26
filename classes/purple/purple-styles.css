@@ -37,6 +37,8 @@ header {
   grid-area: gradient;
   height: 20vw;
   background: linear-gradient(rgba(151, 99, 189, 100), rgba(194, 168, 213, 50));
+  background-image: url("./jean-beller-RjfVzePmmfM-unsplash.jpg");
+  background-size: cover;
  }
 
  #class-bio {
@@ -85,6 +87,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -148,8 +151,8 @@ header {
     }
 
     .card iframe {
-        width: 80vw;
-        height: 80vw;
+      width: 75vw;
+      height: 80vw;
     }
 
     #header-content {
