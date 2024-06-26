@@ -31,7 +31,7 @@ iframe:hover {
 .btn {
   width: 50%;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   background-color: rgb(194, 231, 246);
   border-color: rgb(146, 193, 211);
   border-radius: 5px;
@@ -57,7 +57,7 @@ main {
 }
 
 #information {
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 10%;
   margin-top: 2%;
   margin-bottom: 1%;
@@ -74,9 +74,11 @@ main {
 #bio {
   grid-area: bio;
 }
+
 #bio > h1 {
   margin-bottom: 5px;
 }
+
 
 #bio > p {
   margin-top: 2%;
