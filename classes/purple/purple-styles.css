@@ -73,14 +73,17 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgba(151, 99, 189, 100);
+  background-color: rgba(176, 120, 164, 100);
   color: white;
   height: 60px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  /* trying a top-only border-radius */
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   letter-spacing: 3px;
+  margin-bottom: 1rem;
  }
 
 .fan-page-cards {
@@ -106,7 +109,7 @@ header {
 } */
 
 .card-header {
-  background-color:rgba(151, 99, 189, 100); 
+  background-color:rgba(176, 120, 164, 100); 
   color: white;
   padding: 10px;
   font-size: 16px;
@@ -124,7 +127,7 @@ header {
   width: 30%;
   margin: 10px auto;
   padding: 10px;
-  background-color: rgba(151, 99, 189, 100); 
+  background-color: rgba(176, 120, 164, 100); 
   color: white;
   border: none;
   border-radius: 5px; /* Rounded edges */
@@ -134,6 +137,12 @@ header {
 
 .btn:hover {
   background-color: #271d2e;
+}
+
+a {
+  color: #2d0b52;
+  text-decoration: none;
+  margin: 1em;
 }
 
 @media only screen and (max-width: 890px) {
@@ -174,5 +183,13 @@ header {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
+    }
+}
+
+
+/* Extra-wide screens */
+@media only screen and (min-width: 1520px) {
+    #header-content {
+      top: -7vw;
     }
 }
