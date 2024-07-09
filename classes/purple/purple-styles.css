@@ -1,14 +1,171 @@
-span {
-  color: purple;
+* {
+  font-family:'Helvetica', 'Arial', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
+html {
+  font-size: 16px;
+}
+body {
+/* margin: 10px; */ /* tried removing the margin so that the gradient banner would fill the entire top of page, it may be necessary to add some margins to child elements */
+background-color: white; /* Light gray background */
+color: #333; /* Dark gray text */
+}
+header {
+    height: min-content;
+}
+#header-content {
+  margin: 2em;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  border-bottom: 1px solid;
+  grid-template-areas:
+    /* "gradient gradient gradient" */
+    "pic . ."
+    "pic . header-aside"
+    "student-name student-name header-aside";
+  position: relative;
+  top: -10vw;
+}
+ #purple-gradient {
+  grid-area: gradient;
+  height: 20vw;
+  background: linear-gradient(rgba(151, 99, 189, 100), rgba(194, 168, 213, 50));
+  background-image: url("./img/jean-beller-RjfVzePmmfM-unsplash.jpg");
+  background-size: cover;
+ }
+ #student-name {
+  grid-area: student-name;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 2em 2em 0;
+ }
+ #header-aside {
+  grid-area: header-aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ #headshot {
+  grid-area: pic;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+ }
+ #header-aside ul{
+  list-style: none;
+  padding-left: 0;
+ }
+ #body-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(176, 120, 164, 100);
+  color: white;
+  height: 60px;
+  border: 1px solid #ccc;
+  /* border-radius: 10px; */
+  /* trying a top-only border-radius */
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+ }
+.fan-page-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
 .card {
   width: 400px;
   margin: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
 }
-
+/* .card:hover {
+    background-color: rgb(226, 199, 226);
+} */
+.card-header {
+  background-color:rgba(176, 120, 164, 100);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 200;
+  border-top-left-radius: 10px; /* top rounded edges*/
+  border-top-right-radius: 10px;
+  text-transform: uppercase;
+}
+.card-body {
+  padding: 10px;
+}
 .btn {
-  width: 50%;
-  margin: auto;
-  margin-bottom: 10px;
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(176, 120, 164, 100);
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded edges */
+  cursor: pointer;
+  align-self: center;
+}
+.btn:hover {
+  background-color: #271D2E;
+}
+a {
+  color: #2D0B52;
+  text-decoration: none;
+  margin: 1em;
+}
+@media only screen and (max-width: 890px) {
+    .fan-page-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        height: auto;
+        margin: 10px;
+    }
+    .card iframe {
+      width: 75vw;
+      height: 80vw;
+    }
+    #header-content {
+        top: -20vw;
+        grid-template-columns: 1fr;
+        grid-template-areas: "pic"
+                            "header-aside"
+                            "student-name";
+        font-size: smaller;
+    }
+    #headshot {
+        height: 40vw;
+        width: 40vw;
+        margin-left: 20vw;
+    }
+    #header-aside ul {
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+/* Extra-wide screens */
+@media only screen and (min-width: 1520px) {
+    #header-content {
+      top: -7vw;
+    }
 }
